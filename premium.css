@@ -112,9 +112,102 @@ h1,h2,h3,.brand-main-title,.f-main,.score-large-digits,.price-val,.spec-value,.s
 }
 @media(max-width:992px){.memo-white-card{transform:none}}
 @media(max-width:768px){
- .hero-cover-section{padding:60px 0 70px}
- .tech-method-section,.why-us-section,.farm-catalog-section,.reviews-feedback-section,.pickup-and-contacts-section{padding:70px 0}
- .mq-item img{width:50px;height:50px}.mq-item{font-size:1.05rem}
- .card-image-box{height:210px}
+ .container{padding:0 16px}
+ /* Компактная шапка и навигация */
+ .header-content-row{padding:8px 16px;gap:10px}
+ .header-cta-block{display:none}
+ .brand-icon-box{width:42px;height:42px}
+ .header-brand-wrap .brand-link{gap:10px}
+ .brand-eyebrow{font-size:9px;letter-spacing:1.2px}
+ .brand-main-title{font-size:18px}
+ .brand-caption{font-size:10px}
+ .nav-scrollable{-webkit-overflow-scrolling:touch;padding:0 12px}
+ .nav-links-menu{gap:4px;padding:6px 0}
+ .nav-link{font-size:12px;padding:6px 11px;gap:5px}
+
+ /* Главный экран */
+ .hero-cover-section{padding:36px 0 48px}
+ .hero-cover-section::after{width:320px;height:320px;right:-60px;bottom:-70px}
+ .hero-grid-split{gap:28px}
+ .hero-pill-badge{font-size:11px;padding:5px 12px;margin-bottom:14px}
+ .hero-primary-heading{font-size:clamp(1.6rem,6.2vw,2.15rem);line-height:1.15;margin-bottom:14px}
+ .hero-lead-description{font-size:14.5px;line-height:1.55;margin-bottom:22px}
+ .hero-actions-group{gap:10px;margin-bottom:24px}
+ .btn-hero-primary,.btn-hero-secondary{padding:14px 18px;border-radius:14px}
+ .hero-stats-band{gap:12px;padding-top:18px}
+ .hero-badge-card{padding:24px 18px;border-radius:24px}
+ .hero-logo-display{width:88px;height:88px;margin-bottom:12px}
+ .hero-card-title{font-size:21px}
+ .spec-value{font-size:clamp(18px,5vw,23px)}
+
+ /* Бегущая лента */
+ .mq{padding:16px 0}
+ .mq::before,.mq::after{width:32px}
+ .mq-item img{width:46px;height:46px}
+ .mq-item{font-size:1rem;gap:10px;padding-right:28px}
+
+ /* Секции и заголовки */
+ .tech-method-section,.why-us-section,.farm-catalog-section,.reviews-feedback-section,.pickup-and-contacts-section{padding:52px 0}
+ .section-heading-center{margin-bottom:28px}
+ .heading-title-large{font-size:clamp(1.55rem,5.5vw,2rem)}
+ .heading-subtitle-lead{font-size:14px}
+
+ /* Карточки метода и стандартов */
+ .method-cards-grid,.standards-banner-grid,.catalog-cards-grid,.reviews-cards-stream{gap:16px}
+ .method-card-box{padding:22px 18px;border-radius:20px}
+ .method-icon-circle{width:50px;height:50px;font-size:19px;margin-bottom:14px;border-radius:14px}
+ .standard-feature-item{padding:20px 18px;border-radius:20px;gap:14px}
+ .std-num-bubble{font-size:2.4rem}
+
+ /* Тизер и баннер разделки */
+ .catalog-teaser-panel{flex-direction:column;text-align:center;padding:24px 18px;border-radius:22px;gap:14px}
+ .btn-teaser-call{width:100%;justify-content:center}
+ .butcher-service-banner{padding:18px 16px;border-radius:18px;gap:12px;margin-bottom:24px}
+
+ /* Фильтры и карточки каталога */
+ .catalog-filters-bar{gap:8px;margin-bottom:24px}
+ .filter-tab-btn{padding:9px 14px;font-size:12.5px;gap:6px}
+ .product-item-card{border-radius:20px}
+ .card-image-box{height:200px}
+ .card-body-content{padding:18px 16px}
+ .product-title-text{font-size:18px}
+ .price-val{font-size:24px}
+ .btn-order-product{padding:13px;font-size:14px}
+ .catalog-summary-panel{padding:22px 18px;border-radius:20px;gap:18px}
+
+ /* Отзывы и форма */
+ .reviews-score-banner{padding:22px 18px;border-radius:22px;gap:16px;margin-bottom:24px}
+ .score-large-digits{font-size:50px}
+ .score-benefit-chip{font-size:12px;padding:6px 12px}
+ .review-single-card{padding:20px 16px;border-radius:20px}
+ .review-single-card::before{font-size:90px;right:14px}
+ .review-header-flex{flex-wrap:wrap;gap:8px 10px}
+ .add-review-section-box{padding:24px 16px;border-radius:22px}
+ .field-control-group input,.field-control-group textarea{font-size:16px;padding:12px 14px}
+ .star-node{font-size:28px;padding:2px}
+ .btn-publish-feedback{width:100%;justify-content:center;padding:14px 20px}
+
+ /* Самовывоз, контакты и подвал */
+ .pickup-unified-layout{padding:22px 16px;border-radius:24px;gap:24px}
+ .pickup-main-heading{font-size:clamp(1.45rem,5vw,1.85rem)}
+ .contact-bold-phone{font-size:clamp(18px,5vw,22px);word-break:break-word}
+ .btn-direct-call-gold{width:100%;justify-content:center;padding:14px 18px}
+ .memo-white-card{padding:20px 16px;border-radius:20px}
+ .main-site-footer{padding:44px 0 22px}
+
+ /* Нижняя панель звонка с учётом safe-area */
+ .mobile-sticky-quickdial-bar{padding:9px 14px max(9px,env(safe-area-inset-bottom))}
+ .sticky-dial-flex{padding:0}
+ .sticky-rabbit-pic{width:34px;height:34px}
+ .sticky-name-meta strong{font-size:12.5px}
+ .sticky-name-meta span{font-size:10.5px}
+ .btn-sticky-touch-call{padding:9px 14px;font-size:13px}
+}
+@media(max-width:400px){
+ .hero-primary-heading{font-size:1.5rem}
+ .hero-card-specs{gap:6px}
+ .spec-cell{padding:8px 4px}
+ .spec-name{font-size:9px}
+ .sticky-name-meta span{display:none}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}
